@@ -1,0 +1,26 @@
+section.project-donate input {
+	display: block!important;
+	position: absolute;
+	left: 5px;
+}
+section.project-donate input[type=radio] {
+	display: block!important;
+}
+section.project-donate label:before {
+	display: none!important;
+}
+#homepage article.project {
+	clear: both!important;
+}
+#collective-hub-page article.project .project-details,
+#homepage article.project .project-details {
+	background-position: 0 0!important;
+}
+#project-page section.project-donate input {
+	left: -5px;
+}
+.amountInput {
+	position: absolute;
+	left: 50px!important;
+	top: 25px;
+}

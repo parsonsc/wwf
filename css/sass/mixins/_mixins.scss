@@ -1,0 +1,77 @@
+@import "compass/css3/opacity";
+@import "compass/css3/transition";
+@import "compass/css3/transform";
+@import "compass/css3/box-sizing";
+@import "compass/css3/box-shadow";
+@import "colour_palette";
+
+@mixin respond-to($media, $min:"", $max:"") {
+  @if $media == mobile {
+    @media only screen and (max-width: 640px) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: 641px) and (max-width: 800px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 801px) { @content; }
+  }
+  @else if $media == not-mobile {
+    @media only screen and (min-width: 601px) { @content; }
+  }
+  @else if $media == defined {
+
+    @if $min == 0 {
+      @media only screen and (max-width: $max) { @content; }
+    }
+
+    @else if $max == 0 {
+      @media only screen and (min-width: $min) { @content; }
+    }
+
+    @else {
+      @media only screen and (min-width: $min) and (max-width: $max) { @content; }
+    }
+
+  }
+}
+
+
+// vars for fonts used on site
+$font_title_copy:'SerifaLT-Bold', Arial, sans-serif;
+$font_body_copy: "Benton Sans Cond", Arial, sans-serif;
+$font_button_copy: 'SerifaLT-Bold', Arial, sans-serif;
+$font_bold_copy:  "Benton Sans Medium", Arial, sans-serif;
+
+@mixin font_title_copy {
+  font-family: $font_title_copy;
+}
+@mixin font_body_copy {
+  $font_body_copy: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 20px;
+  font-family: "Benton Sans Cond";
+}
+@mixin font_menu_copy {
+  
+}
+
+
+@mixin button_submit_style {
+ 
+}
+
+@mixin button_link_style {
+  
+}
+@mixin read_more {
+  color: $blue;
+  background: $green;
+  border: 3px solid $green;
+  text-decoration: none;
+  padding: 10px 20px;
+  margin: 20px auto 0;
+  text-align: center;
+  font-family: $font_button_copy;
+  @include transition(all 0.2s ease-in-out);
+}
+

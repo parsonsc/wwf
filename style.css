@@ -1,0 +1,2509 @@
+/*WWF COLLECTIVES STYLESHEET*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	margin: 0;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+a {
+	text-decoration: none;
+}
+ul {
+	margin: 0;
+}
+button {
+	border: none;
+	padding: 10px 40px!important;
+}
+
+/*** STYLESHEET START ***/
+/** MISC START **/
+.clear {
+	display: block;
+	clear: both;
+}
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+.show_desktop {
+	display: block!important;
+}
+.show_mobile,
+.show_iphone {
+	display: none!important;
+}
+.show_tablet {
+	display: none!important;
+}
+/** MISC END **/
+
+/** MAIN LAYOUT START **/
+body {
+	text-align: center;
+}
+
+.page-section {
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 960px;
+	overflow: hidden;
+	text-align: left;
+}
+/** MAIN LAYOUT END **/
+
+/** FONT FACE START **/
+@font-face {
+    font-family: 'WWFRegular';
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot');
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.woff') format('woff'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.ttf') format('truetype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.svg#WWFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/** FONT FACE END **/
+
+/* using modernizr to detect lack of @font-face support and adjust the size of arial to fit */
+.no-fontface #tpmmdi h1 {font-size:300%;}
+.no-fontface #tpmmdi div.tpmmdi-do div.article div.body h2 {font-size:108%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.twitter h3 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi a.button {font-size:80%;line-height:160%;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.facebook h3 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-do div.article div.body form h3 {font-size:150%;font-weight:bold}
+.no-fontface #tpmmdi div.tpmmdi-carousel div.about h2 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-carousel div.about a.button {font-size:150%;line-height:160%;}
+.no-fontface #tpmmdi a.do-it{font-size:130%;line-height:110%;}
+.no-fontface #tpmmdi div.tpmmdi-wwyd h2{font-size:200%; font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-social div.box h3 {font-size:150%; font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa h2 {font-size:200%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa ul li span.title {font-size:200%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa ul li span.detail {font-size:100%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.social-links h3 {font-size:150%;font-weight:bold;}
+.no-fontface .mainstage a.main_story .headline h1 {font-size:18pt;}
+.no-fontface #social_footer h3 {font-size:.97em;font-weight:bold;}
+h1,
+h2,
+h3,
+h4,
+h4,
+h5 {	
+    font-family: WWFRegular;
+    margin: 0;
+}
+h3 {font-size: 32px;}
+/** FONT FACE END **/
+
+/** TYPOGRAPHY START **/
+body {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+/*GENERIC SITE WIDE STYLING*/
+
+/*SITE BUTTON / CTA'S*/
+.orange-button,
+.purple-button,
+.blue-button,
+.green-button {
+    font-family: WWFRegular;
+    font-size: 26px;
+    line-height: 26px;
+    text-align: center;	
+	color: #fff;
+	position: relative;
+	display: inline-block;
+	padding: 10px 15px 10px 0;
+	border-radius: 3px;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	background-image: url(images/arrow_new.png)!important;
+	background-repeat: no-repeat!important;
+	background-position: 91% 17px!important;
+}
+.orange-button:hover {
+	background-color: #c35a14;
+}
+.purple-button:hover {
+	background-color: #7a1055;
+}
+.blue-button:hover:hover {
+	background-color: #1183b8;
+}
+.green-button:hover {
+	background-color: #686f26;
+}
+.orange-button:hover,
+.purple-button:hover,
+.blue-button:hover,
+.green-button:hover {
+	cursor: pointer;
+	cursor: hand;
+}
+/*.orange-button:hover,
+.purple-button:hover,
+.blue-button:hover,
+.green-button:hover,
+.orange-button.active,
+.purple-button.active,
+.blue-button.active,
+.green-button.active {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}*/
+.orange-button {
+	background: #da681c;
+}
+.purple-button {
+	background: #9a0064;
+}
+.blue-button {
+	background: #0095da;
+}
+.green-button {
+	background: #7b8426;
+}
+section#lead #lead-inner .orange-button {
+	width: 300px;
+}
+section#lead #lead-inner .purple-button {
+	background: none;
+	width: 250px;
+}
+section#lead #lead-inner .purple-button:before {
+    right:4px;
+    border-left-color:#9a0064;/*Chevron Color*/
+}
+section#lead #lead-inner .purple-button:after {
+    border-left-color:#f6f6eb;/*Match background colour*/
+}
+section#lead #lead-inner .purple-button:hover {
+	opacity: 1;
+}
+/*END CTA'S*/
+
+/* DONATE BANNER CLOSE BUTTON*/
+section.project-donate header .close-button {
+	display: inline-block;
+	position: relative;
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+	background: #9a0064;
+	border-radius: 15px;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+	vertical-align: middle;
+}
+section.project-donate header .close-button:before,
+section.project-donate header .close-button:after {
+	left: 7px;
+    position:absolute;
+    display:block;
+    content:"";
+    border:8px solid transparent;/*adjust size*/
+}
+section.project-donate header p:hover > .close-button {
+	opacity: 0.5;
+	filter: alpha(opacity=50);
+}
+/*Change four 'top' values below to rotate (top/right/bottom/left)*/
+section.project-donate header .close-button:before {
+    top:2px;
+    border-bottom-color:#fff;/*Chevron Color*/
+}
+section.project-donate header .close-button:after {
+    top:4px;/*adjust thickness*/
+}
+section.project-donate header .close-button:after {
+    border-bottom-color:#9a0064;/*Match background colour*/
+}
+/*END DONATE CLOSE */
+
+/*BREADCRUBMB*/
+nav.site_breadcrumb {
+	position: absolute;
+	top: 10px;
+	left: 30%;
+	color: #fff;
+	font-weight: bolder;
+}
+nav.site_breadcrumb ul li {
+	display: block;
+	float: left;
+	font-size: 12px;
+}
+nav.site_breadcrumb ul li a {
+	color: #fff;
+}
+#collective-hub-page section#header-outer-container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 15px 0 40px;
+	background: url('images/header.jpg') no-repeat center center;
+	background-size: cover;
+	height: 240px;
+}
+#collective-hub-page section#header-outer-container header#collective-hub img {
+	width: 291px;
+	margin: 70px auto;
+}
+nav.site_breadcrumb ul li img {
+	width: 5px!important;
+	margin: 0 10px 1px!important;
+}
+/*END BREADCRUMBS*/
+
+/*HEADER STYLINGS*/
+.left_box {
+	width: 46%;
+	float: left;
+	padding: 0% 2%;
+	height: 270px;
+	max-height: 270px;
+}
+section#intro .left_box p {
+	margin: 10px 0 10px;
+}
+section#intro {
+	margin-top: 25px;
+}
+section#intro .article-text,
+section#intro #video-container {
+	float: left;
+	display: block;
+	width: 50%;
+	line-height: 20px;
+	
+}
+#homepage section#intro .article-text {
+	color: #fff;
+}
+section#intro .article-text {
+	width: 47%;
+
+}
+section#intro #video-container {
+	float: right;
+}
+section#intro #video-container #video {
+	width: 100%;
+}
+section#intro p {
+	margin: 10px 0 20px;
+}
+section#intro p strong {
+	font-weight: bold;
+}
+/*END HEADER STYLINGS*/
+
+/*SUPPORTER PROFILE*/
+section#profiles {
+	background: #f6f6eb;
+}
+section#profiles article h4 {
+	margin-bottom: 10px;
+	color: #9a0064;
+}
+section#profiles #profiles-inner {
+	padding: 18px 10px 28px;
+	
+}
+section#profiles #profiles-inner .divider {
+	padding: 0 0 15px;
+	border-top: 4px solid #d2d2d2;
+}
+section#profiles article {
+	display: inline-block;
+	width: 33%;
+	vertical-align: top;
+}
+section#profiles article p.name,
+section#profiles article p.news-update-title {
+	margin: 20px 0 5px;
+	font-family: WWFRegular;
+	font-size: 24px;
+}
+section#profiles article a {
+	display: inline-block;
+	margin: 10px 0;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	text-decoration: none;
+}
+section#profiles article aside {
+	float: left;
+	margin-right: 8px;
+	width: 138px;
+	height: 140px;
+	background-size: cover;
+	background-position: center -2px;
+	background-repeat: no-repeat;
+} 
+.og-grid {
+	list-style: none;
+	padding: 20px 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 980px;
+	position: relative;
+}
+/*grid list / max-height to stop the content box fixing it's height to window size */
+.og-grid li {
+	display: inline-block;
+	margin: 10px 5px 0 5px;
+	vertical-align: top;
+	max-height: 525px!important
+}
+
+.og-grid li > a,
+.og-grid li > a img {
+	border: none;
+	outline: none;
+	display: block;
+	position: relative;
+}
+
+.og-grid li.og-expanded > a::after {
+	top: auto;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: #fff;
+	border-width: 15px;
+	left: 50%;
+	margin: -20px 0 0 -15px;
+}
+/*expander box - content located within this box / max-height to stop the content box fixing it's height to window size */
+.og-expander {
+	position: absolute;
+	background: #f6f6eb;
+	top: auto;
+	left: 0;
+	width: 100%;
+	margin-top: 10px;
+	text-align: left;
+	height: 0;
+	overflow: hidden;
+	max-height: 350px!important;
+}
+/*padding added to the content box*/
+.og-expander-inner {
+	padding: 20px 30px;
+	background: #fff;
+	overflow: hidden;
+}
+/*close button*/
+.og-close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 20px;
+	right: 20px;
+	cursor: pointer;
+}
+
+.og-close::before,
+.og-close::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	height: 1px;
+	background: #888;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.og-close::after {
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.og-close:hover::before,
+.og-close:hover::after {
+	background: #333;
+}
+
+/*inner content panels - image on left content on right*/
+.og-fullimg,
+.og-details {
+	width: 46%;
+	float: left;
+	overflow: hidden;
+	position: relative;
+}
+
+.og-details {
+	padding: 0 40px 0 20px;
+}
+
+.og-fullimg {
+	text-align: center;
+}
+
+.og-fullimg img {
+	display: inline-block;
+	max-height: 100%;
+	max-width: 100%;
+}
+
+/*font styling*/
+.og-details h3 {
+	font-weight: 300;
+	font-size: 52px;
+	padding: 40px 0 10px;
+	margin-bottom: 10px;
+}
+
+.og-details p {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: #999;
+}
+
+.og-details a {
+	font-weight: 700;
+	font-size: 16px;
+	color: #333;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding: 10px 20px;
+	border: 3px solid #333;
+	display: inline-block;
+	margin: 30px 0 0;
+	outline: none;
+}
+
+.og-details a::before {
+	content: '\2192';
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.og-details a:hover {
+	border-color: #999;
+	color: #999;
+}
+/* End font styling */
+
+/*loading anaimation*/
+.og-loading {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #ddd;
+	box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -25px 0 0 -25px;
+	-webkit-animation: loader 0.5s infinite ease-in-out both;
+	-moz-animation: loader 0.5s infinite ease-in-out both;
+	animation: loader 0.5s infinite ease-in-out both;
+}
+
+@-webkit-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@-moz-keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+
+@keyframes loader {
+	0% { background: #ddd; }
+	33% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ccc, -15px 30px 1px #ddd; }
+	66% { background: #ccc; box-shadow: 0 0 1px #ccc, 15px 30px 1px #ddd, -15px 30px 1px #ccc; }
+}
+/*END PROFILE*/
+
+/** SHARE START **/
+section#share {
+	background: #dfdfd0;
+}
+section#share #share-inner {
+	padding: 10px;
+	
+}
+section#share #share-inner h4 {
+	float: left;
+}
+section#share #share-inner img.share-icon {
+	float: right;
+	margin-left: 5px;
+	width: 43px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	
+}
+/** SHARE END **/
+
+/** PROJECTS START **/
+section#projects {
+	margin-bottom: 30px;
+}
+article.project {
+	margin-top: 30px;
+	background: #f6f6eb;
+}
+section.project-details {
+	position: relative;
+}
+/*END PROJECTS*/
+
+/*THANK YOU AREA*/
+.thank-you {
+	margin-top: 20px;
+}
+.thank-you h3 {
+    font-family: WWFRegular;
+    font-size: 26px;
+}
+.thank-you div.donation-amount {
+	margin-right: 5px;
+    font-family: WWFRegular;
+    font-size: 32px;
+}
+.thank-you div.container {
+	display: inline-block;
+	width: 32.5%;
+	margin-top: 10px;
+	vertical-align: top;
+}
+.thank-you div.container div h4 {
+	font-family: WWFRegular;
+    font-size: 20px;
+}
+.thank-you div.container div p {
+	margin: 0;
+	font-weight: normal;
+	font-size: 13px;
+}
+/*END THANK YOU*/
+
+/*LEFT / RIGHT HAND PANELS*/
+div.article-left {
+	display: inline-block;
+	width: 50%;
+	padding: 25px 10px 20px;	
+}
+div.article-left .funded .funding-goal {
+	width: 100%;
+	height: 32px;
+	background: #d2d2d2;
+}
+div.article-left .funded .funding-goal .funding-total {
+	height: 100%;	
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;	
+}
+.purple-total {background: #9a0064;}
+.blue-total {background: #0095da;}
+.green-total {background: #7b8426;}
+div.article-left .funded .funding-goal .funding-total.inactive {
+	width: 0 !important;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;	
+}
+div.article-left .funded p,
+section.project-donate label span {
+	font-family: WWFRegular;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #333333;
+}
+div.article-left .funded p span.smaller,
+section.project-donate .manual label span {
+	font-size: 26px;
+}
+section.project-donate .manual label span {
+	text-transform: none;
+}
+section.project-donate .manual p span {
+	font-family: WWFRegular;
+	font-size: 32px;
+	color: #333333;
+	vertical-align: middle;	
+}
+section.project-donate header p {
+	font-size: 14px;
+}
+section.project-donate article p {
+	font-size: 14px;
+	line-height: 18px;
+}
+div.article-left p {
+	margin: 20px 0;
+	line-height: 20px;
+}
+div.article-left section.funded p {
+	margin: 15px 0;
+}
+
+aside.article-image div.flash p {
+    font-family: WWFRegular;
+    font-size: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+aside.article-image {
+	display: inline-block;
+	position: absolute;
+	right: 0;	
+	width: 50%;
+	height: 100%;
+	background-size: cover;
+	background-position: center center;
+}
+aside.article-image div.flash {
+	position: absolute;
+	right: 0;
+	width: 0px;
+	height: 0px;
+	border-bottom: 150px solid transparent;
+	border-right: 150px solid rgba(216,39,84,0.6);
+}
+aside.article-image div.flash.flash-funded {
+	border-right: 150px solid rgba(142,196,73,0.6);
+}
+aside.article-image div.flash p {
+    position: relative;
+    top: 12px;
+    right: -60px;
+    width: 93px;
+    height: 93px;
+    margin: 0px;
+}
+aside.article-image div.flash.flash-funded p {
+	top: 30px;
+}
+/*END LEFT / RIGHT HAND PANEL*/
+
+/*LEAD */
+section#lead {
+	background: #f6f6eb;
+}
+section#lead #lead-inner {
+	padding: 10px;	
+}
+section#lead #lead-inner {
+	text-align: center;
+}
+section#lead #lead-inner h3 {
+	margin: 10px 0;
+	text-transform: none;
+}
+section#lead #lead-inner p {
+	margin: 20px 0 15px;
+}
+section#lead #lead-inner p span.or {
+	font-family: WWFRegular;
+	font-size: 36px;
+	color: #333333;
+}
+/*END LEAD*/
+
+/*COLLECTIVE*/
+section#collective #collective-inner #expanded-image-container article h4 {
+	margin: 7.5% 0 2.5%;
+}
+section#collective #collective-inner #expanded-image-container article h4,
+section#profiles article h4,
+section#share #share-inner h4 {
+	font-family: WWFRegular;
+	font-size: 32px;
+	line-height: 43px;
+	color: #333333;	
+}
+section#collective #collective-inner #expanded-image-container article h4 span.smaller {
+	font-size: 26px;
+}
+section#collective #collective-inner #expanded-image-container article p {
+	font-size: 16px;
+	line-height: 20px;
+}
+#collective-hub-page div.article-left {
+	width: 48%;
+}
+#collective-hub-page .project-buttons .orange-button, 
+#collective-hub-page .project-buttons .purple-button {
+	width: 46%;
+}
+/*END COLLECTIVE*/
+
+/*DONATE SECTION*/
+section#donate {
+	background: #f6f6eb;
+}
+section#donate.project-donate .radio div {
+	width: 14.5%;
+}
+section#donate.project-donate .radio div.manual {
+	width: 39%;
+}
+section#donate.project-donate .radio div.manual p {
+	position: relative;
+	display: inline-block;
+	top: 10px;
+	margin-top: 0;
+}
+section.project-donate {
+	display: none;
+}
+section.project-donate header {
+	background: #dfdfd0;
+	padding: 15px 10px 10px;
+	border-bottom: 4px solid #9a0064;
+}
+section.project-donate header h3 {
+	float: left;
+}
+section.project-donate header p {
+	float: right;
+}
+section.project-donate header p:hover {
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: underline;
+}
+section.project-donate article {
+	padding: 25px 10px;
+}
+section.project-donate label {
+	display: inline-block;
+	cursor: pointer;
+	position: relative;
+	font-size: 14px;
+	line-height: 18px;
+}
+section.project-donate input[type=radio] {
+	display: none;
+}
+section.project-donate label:before {
+	content: "";
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin-right: 10px;
+	position: absolute;
+	left: 40px;
+	top: 3px;
+	background-color: #d2d2d2;
+	overflow: hidden;
+}
+section.project-donate div.manual label:before {
+	bottom: 4px;
+	left: 0;
+}
+section.project-donate div.manual label {
+	padding-left: 30px;
+}
+
+section.project-donate .radio div {
+	display: inline-block;
+	margin: 20px 2%;
+	width: 19%;
+	vertical-align: top;
+	text-align: center;
+	position: relative;
+}
+section.project-donate .radio div.manual {
+	margin-top: 22px;
+	width: 25%;
+	text-align: left;
+}
+section.project-donate .manual p span {
+	margin-right: 30px;
+}
+section.project-donate .manual p input,
+section.project-donate .manual i input {		
+	width: 75%;
+	padding: 10px;
+	border: 1px solid #333;
+	border-radius: 2px;
+}
+section.project-donate .radio label:before {
+	border-radius: 8px;
+}
+section.project-donate .manual p {
+	margin-left: -25px;
+}
+
+section.project-donate label:hover:before {
+    content: "\2022";
+    color: #9a0064;
+    font-size: 24px;
+    text-align: center;
+    line-height: 18px;
+    text-indent: -1px;
+	-moz-transition: all 0.25s;
+	-webkit-transition: all 0.25s;
+	-ms-transition: all 0.25s;
+	-o-transition: all 0.25s;
+	transition: all 0.25s;
+}
+section.project-donate input[type=radio]:checked + label:before {
+    content: "\2022";
+    color: #9a0064;
+    font-size: 56px;
+    text-align: center;
+    line-height: 18px;
+    text-indent: -2px;
+	-moz-transition: all 0.33s;
+	-webkit-transition: all 0.33s;
+	-ms-transition: all 0.33s;
+	-o-transition: all 0.33s;
+	transition: all 0.33s;
+}
+section.project-donate .radio div p,
+section.project-donate .radio div i {
+	margin-top: 15px;
+}
+section.project-donate .project-donate-button-container {
+	text-align: center;
+}
+section.project-donate .project-donate-button-container .orange-button {
+	width: 280px;
+}
+/*END DONATE*/
+
+  /*******************/
+ /*HOMEPAGE STYLING*/
+/*****************/
+#homepage #header-outer-container h2,
+#homepage #header-outer-container h3 {
+	font-family: WWFRegular;
+	color: #fff;
+	text-transform: none;
+}
+#homepage #header-outer-container h2 {
+	font-size: 83px;
+}
+#homepage #header-outer-container h3 {
+	margin: 10px 0 65px;
+	font-size: 42px;
+	text-shadow: 0px 0px 20px rgba(0,0,0,0.75);
+}
+#homepage #header-outer-container p {
+	line-height: 20px;
+	color: #fff;
+}
+
+
+#homepage section#collectives #collectives-inner {
+	text-align: center;
+}
+#homepage section#collectives #collectives-inner h3 {
+	margin: 10px 0;
+	text-transform: none;
+}
+#homepage section#collectives #collectives-inner p {
+	margin: 20px 0 15px;
+}
+#homepage section#collectives #collectives-inner p span.or {
+	font-family: WWFRegular;
+	font-size: 36px;
+	color: #333333;
+}
+#homepage section#collectives #collectives-inner h3 {
+	font-size: 42px;
+}
+#homepage section#collectives #collectives-inner a {
+	margin: 30px;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left,
+#homepage section#projects .project .project-details .project-details-inner .article-left h3,
+#homepage section#projects .project .project-details .project-details-inner .article-left p {
+	color: #fff;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header {
+	background: #f6f6eb;
+	padding: 10px;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+	float: left;
+	width: 60%;
+	text-align: center;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header h3.the-greatest-need-title {
+	padding: 0;	
+ 	color: #033333;
+ 	font-size: 44px;
+ 	margin: 20px 0;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header h3 img {
+	width: 100%;
+	height: auto;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+	float: right;	
+	width: 30%;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .orange-button,
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .purple-button,
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .blue-button,
+#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .green-button {
+	float: none;
+	display: block;
+	margin-top: 15px;
+	width: 90%;
+}
+
+/*BUTTONS*/
+#homepage section#collectives #collectives-inner .orange-button {
+	width: 500px;
+}
+#homepage section#collectives #collectives-inner article .purple-button,
+#homepage section#collectives #collectives-inner article .blue-button,
+#homepage section#collectives #collectives-inner article .green-button {
+	padding: 10px 40px 10px 25px;
+}
+
+
+/*HOMEPAGE HEADER*/
+#homepage #header-outer-container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 15px 0 40px;
+	background: url('images/homepage_header_bg.jpg') no-repeat center center;
+	background-size: cover;
+}
+#homepage #header-outer-container article {
+	background: rgba(29,37,45,0.6);
+}
+#homepage section#intro #video-container #video {
+	margin-bottom: -3px;
+}
+#homepage section#intro .article-text,
+#homepage section#intro .left_box {
+	background: rgb(29, 37, 45);
+	background: rgba(29, 37, 45, 0.8);
+}
+/*END HOMEPAGE HEADER */
+
+/* COLLECTIVES START - ANIMATED GIF SECTION */
+section#collectives {
+	background: #f6f6eb;
+}
+section#collectives #collectives-inner {
+	padding: 10px;
+	
+}
+section#collectives article {
+	display: inline-block;
+	width: 32%;
+	vertical-align: top;
+	margin-top: 20px;
+}
+section#collectives article img {
+	width: 100%;
+	max-width: 291px;
+	height: auto;
+}
+section#collective {
+	margin-top: 25px;
+	background: #f6f6eb;
+}
+section#collective #collective-header {
+	background: #9a0064;
+	text-align: left;
+	padding: 10px 0;
+	padding-left: 10px;
+}
+section#collective #collective-header h4 {
+	font-family: WWFRegular;
+	font-size: 46px;
+	color: #fff;
+}
+section#collective #collective-header h4 span.smaller {
+	font-size: 32px;
+}
+/* COLLECTIVES END */
+
+
+/*HOMEPAGE PROJECTS*/
+#homepage section#projects {
+	margin-bottom: 0;
+	max-width: none;
+	text-align: center;
+}
+#homepage article.project {
+	margin-top: 0;
+}
+#homepage article.project .project-details {
+	margin: 0 auto;
+	max-width: 1200px;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+#homepage section#projects .project .project-details .project-details-inner,
+#homepage section#projects .project .project-donate {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 960px;
+}
+section#projects .project .project-donate .tabs ul {
+	text-align: left;
+	margin-top: 15px;
+	font-family: WWFRegular;
+	font-size: 26px;
+	color: #333333;
+}
+section#projects .project .project-donate .tabs ul li {
+	padding: 12px 5% 15px;
+	display: inline-block;
+	cursor: pointer;
+	border: 3px solid #dfdfd0;
+	margin-bottom: -3px;
+	margin-left: 15px;
+}
+section#projects .project .project-donate .tabs ul li a {
+	color: #333333;
+	display: block;
+}
+section#projects .project .project-donate .tabs  a.project-donate-button-container {
+	width: 280px;
+}
+section#projects .project .project-donate .tabs ul li.ui-state-active,
+section#projects .project .project-donate .tabs ul li:hover {
+
+	background: #dfdfd0;
+	border: 3px solid #dfdfd0;	
+}
+#homepage section#projects .project .project-donate article {
+	border: 3px solid #dfdfd0;
+	border-bottom: 0;
+}
+#homepage section#projects .project .project-details .project-details-inner {
+	text-align: right;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left {
+	margin: 45px 0;
+	padding: 0;
+	background: #000;
+	background: rgba(0,0,0,0.6);
+	text-align: left;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left article {
+	padding: 0 15px 15px;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left article section.thank-you p.raised-so-far {
+	margin: 0;
+	font-size: 32px;
+	text-transform: uppercase;
+	font-family: WWFRegular;
+}
+#homepage section#projects .project .project-details .project-details-inner .article-left article section.thank-you p span.smaller {
+	font-size: 26px;
+}
+/*END HOMEPAGE PROJECTS*/
+
+  /****************/
+ /*COLLECTIVE HUB*/
+/****************/
+
+section#lead #lead-inner .purple-button {
+	color: #9a0064;
+}
+section#lead #lead-inner .purple-button:hover {
+	text-decoration: underline;
+}
+
+/*COLLECTIVE HUB HEADER*/
+header#collective-hub {
+	position: relative;
+}
+header#collective-hub img {
+	margin-bottom: -3px;
+	width: 100%;
+}
+/*END HEADER*/
+
+/*WORLD LOCATIONS MAP*/
+section#map #map-top-text {
+	margin: 30px 0;
+	font-family: WWFRegular;
+	font-size: 36px;
+	text-align: center;	
+}
+.pin_01 {top: 10%; left: 17%;}
+.pin_02 {top: 50%; left: 25%;}
+.pin_03 {top: 34.2%; left: 76.1%;}
+.pin_04 {top: 48%; left: 51%;}
+section#map #map-container .live-pin {
+	text-decoration: none;
+	color: #333;
+}
+section#map #map-container .live-pin:hover {
+	text-decoration: underline;
+}
+section#map #map-container .live-pin span {
+	position: relative;
+	top: 18%;
+	right: -111%;
+	display: block;
+	font-family: WWFRegular;
+	font-size: 24px;
+	width: 112px;
+}
+section#map .map-overlay span.close {
+	font-size: 14px;
+}
+section#map #map-container {
+	position: relative;
+}
+section#map #map-container #map-image {
+	width: 100%;
+	height: auto;
+	z-index: 0;
+	position: relative;
+}
+section#map #map-container .pin,
+section#map #map-container .live-pin {
+	position: absolute;
+	z-index: 1;
+	background-size: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	-moz-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	-webkit-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	-ms-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	-o-transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+	transition: all 0.55s cubic-bezier(0.25, -1.33, 1, 1.33);
+}
+section#map #map-container .pin {
+	background-image: url('images/pin.png');
+	width: 4.7%;
+	height: 21.3%;
+}
+section#map #map-container .live-pin {
+	background-image: url('images/live_pin.png');
+	width: 5.6%;
+	height: 25.3%;
+}
+section#map.inactive #map-container .pin,
+section#map.inactive #map-container .live-pin {
+	top: -100% !important;
+}
+section#map .map-overlay-outer {
+	display: none;
+}
+section#map .map-overlay span.close {
+	position: absolute;
+	top: 15px;
+	right: 12px;
+}
+section#map .map-overlay span.close:hover {
+	cursor: pointer;
+	cursor: hand;
+	text-decoration: underline;
+}
+
+  /***************/
+ /*PROJECTS PAGE*/
+/***************/
+
+#project-page #header-outer-container {
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+	height: 240px;
+	background: url('images/project_page_header_bg.jpg') no-repeat center center;
+	background-size: cover;
+}
+#project-page section.page-section {
+	margin-top: 12px;
+	padding: 0 10px;	
+}
+/*PROJECT PAGE HEADER*/
+#project-page #header-outer-container header,
+#project-page #header-outer-container header h3 {
+	color: #fff;
+}
+#project-page #header-outer-container header h1 {
+	margin-top: 10px;
+	font-size: 42px;
+	text-transform: uppercase;
+	font-family: WWFRegular;
+}
+#project-page #header-outer-container header h3 {
+	font-size: 28px;
+}
+#project-page #header-outer-container header {
+	position: relative;
+	max-width: 940px;
+	height: 100%;
+	margin: auto;
+}
+#project-page #header-outer-container header nav.site_breadcrumb {
+	left: 0;
+}
+/*END HEADER*/
+#project-page #header-outer-container div.left,
+#project-page #header-outer-container div.right {
+	position: absolute;
+	bottom: 15px;
+	text-align: left;
+}
+#project-page #header-outer-container div.right {
+	right: 0;
+	background: url('images/WWF_Collectives_Wildlife2.gif') #f6f6eb no-repeat center center;
+	background-size: contain;
+	width: 32%;
+	height: 113px;
+	
+}
+/* poject page collective */
+#project-page section.page-section aside section.thank-you {
+	margin-top: 0;
+	padding: 0 10px 20px;
+}
+#project-page section.page-section aside section.thank-you div.container {
+	width: 49%;
+}
+
+#project-page section.page-section aside section#collective #collective-inner {
+	padding: 2.5% 0;
+	overflow: hidden;
+}
+#project-page section.page-section aside section#collective #collective-inner .collective-images img {
+	margin: 0 0 2.5% 2.5%;
+	width: 100%;
+}
+#project-page section.page-section aside section#collective #collective-inner .collective-images img.first {
+	clear: both;
+	margin-left: 0;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container {
+	margin-bottom: 2.5%;
+	text-align: center;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container img {
+	float: none;
+	margin-top: 15%;
+	width: 50%;
+}
+#project-page section.page-section aside section#collective #collective-inner #expanded-image-container article {
+	float: none;
+	width: 100%;
+	text-align: left;
+}
+
+/*SUPPORTER PROFILE*/
+#project-page section.page-section .og-grid {
+	width: 100%;
+}
+#project-page section.page-section .og-expander {max-height: 440px!important;}
+#project-page section.page-section .og-fullimg, 
+#project-page section.page-section .og-details {
+	width: 100%;
+	float: none;
+	margin: auto;
+}
+#project-page section.page-section .og-fullimg {
+	width: 50%;
+}
+#project-page section.page-section .og-details h3 {
+	font-size: 32px;
+	padding: 10px 0 5px;
+	margin-bottom: 5px;
+}
+#project-page section.page-section .og-grid li {
+	display: inline-block;
+	width: 61px;
+}
+
+/** ARTICLE START - LEFT HAND PANEL**/
+#project-page section.page-section article#project-page-article {
+	float: left;
+	width: 66%;
+	padding-right: 10px;
+	
+}
+#project-page section.page-section article#project-page-article img.video-image {
+	width: 100%;
+	height: auto;
+}
+#project-page section.page-section article#project-page-article h2 {
+	margin: 20px 0;
+	font-size: 32px;
+	font-family: WWFRegular;	
+}
+#project-page section.page-section article#project-page-article p {
+	clear: both;
+	margin: 20px 0;
+}
+#project-page section.page-section article#project-page-article p strong {
+	font-weight: bold;
+}
+#project-page section.page-section article#project-page-article p img {
+	max-width: 100%;
+}
+#project-page section.page-section article#project-page-article p img.left {
+	margin: 0 15px 15px 0;
+}
+#project-page section.page-section article#project-page-article p img.right {
+	margin: 0 0 15px 15px;
+}
+#project-page section.page-section article#project-page-article section.project-donate {
+	display: block;
+	background: #f6f6eb;
+}
+
+/* GALLERY START - CLICK THUMBNAIL TO SHOW LARGER IMAGE ABOVE */
+#project-page section.page-section article#project-page-article section.gallery {
+	margin: 20px 0;
+	overflow: hidden;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-main-image {
+	width: 100%;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-thumbnail-image {
+	float: left;
+	width: 13.22%;
+	height: auto;
+	margin-top: 0.5%;
+	margin-left: 1%;
+	cursor: pointer;
+}
+#project-page section.page-section article#project-page-article section.gallery .gallery-thumbnail-image.first {
+	margin-left: 0;
+}
+#imageWrap { 
+    width: 640px; 
+    height: 420px; 
+    background: url('ajax-loader.gif') center center no-repeat; 
+}
+/* GALLERY END */
+
+
+/*RIGHT HAND PANEL*/
+
+#project-page section.page-section aside {
+	float: left;
+	width: 32%;
+}
+#project-page section.page-section .funded {
+	margin-bottom: 15px;
+}
+#project-page section.page-section .funded .funding-goal {
+	width: 100%;
+	height: 32px;
+	background: #d2d2d2;
+}
+#project-page section.page-section .funded .funding-goal .funding-total {
+	height: 100%;
+	background: #9a0064;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;	
+}
+#project-page section.page-section .funded .funding-goal .funding-total.inactive {
+	width: 0 !important;
+	-moz-transition: all 0.2s;
+	-webkit-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;	
+}
+/*NEWS*/
+#project-page section.page-section aside section#updates-and-news {
+	margin-top: 25px;
+	background: #f6f6eb;
+	padding: 25px 10px 5px;
+	clear: both;
+}
+#project-page section.page-section aside section#updates-and-news h3 {
+	font-size: 26px;
+}
+#project-page section.page-section aside section#updates-and-news article h2 {
+	margin-top: 15px;
+	font-size: 22px;
+	font-family: WWFRegular;
+	color: #333;
+}
+#project-page section.page-section aside section#updates-and-news article img {
+	margin: 10px 0;
+	width: 281px;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph {
+	margin: 15px 0;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph a {
+	color: #9a0064;
+	text-decoration: none;
+	font-weight: bold;
+}
+#project-page section.page-section aside section#updates-and-news article p.link-paragraph a:hover {
+	text-decoration: underline;
+}
+/*END RIGHT HAND PANEL*/
+
+/* SHARE START */
+#project-page section.page-section aside section#share {
+	background: none;
+}
+#project-page section.page-section aside section#share h4 {
+	font-size: 22px;
+}
+/* SHARE END */
+
+/*PROJECT DONATE*/
+#project-page section.page-section article#project-page-article section.funded,
+#project-page section.page-section article#project-page-article section.thank-you {
+	vertical-align: top;
+	display: inline-block;
+	width: 42.5%;
+}
+#project-page section.page-section article#project-page-article section.funded {
+	width: 54%;
+}
+#project-page section.page-section article#project-page-article section.thank-you {
+	margin-left: 2.5%;
+}
+#project-page section.page-section article#project-page-article section.thank-you div.container {
+	width: 49%;
+}
+#project-page section.page-section article#project-page-article .funded p {
+	clear: none !important;
+	font-family: WWFRegular;
+	font-size: 32px;
+	text-transform: uppercase;
+	color: #333333;
+}
+#project-page section.page-section article#project-page-article .funded p span.smaller {
+	font-size: 26px;
+}
+
+#project-page section.project-donate {
+	display: block;
+}
+#project-page section.project-donate header#donate-header {
+	background: #9a0064;
+}
+#project-page section.project-donate header#donate-header h4 {
+	font-family: WWFRegular;
+	font-size: 36px;
+	color: #fff;
+}
+#project-page section.project-donate header#donate-header h4 span.smaller {
+	font-size: 26px;
+}
+
+#project-page section.project-donate .radio div {
+	width: 14% !important;
+}
+#project-page article#project-page-article section.project-donate .radio div.manual p {
+	margin-top: 0 !important;
+}
+#project-page article#project-page-article section.project-donate .radio div.manual {
+	margin-top: 15px;
+}
+
+#project-page section.project-donate label {
+	padding: 0;
+}
+#project-page section.project-donate label:before {
+	position: static;
+	margin-right: 0;
+	margin-bottom: 10px;
+}
+#project-page section.project-donate label span {
+	display: block;
+}
+#project-page section.project-donate div.manual {
+	width: auto !important;
+}
+#project-page section.project-donate div.manual label {
+	margin-bottom: 20px;
+	padding-left: 25px;
+}
+#project-page section.project-donate div.manual label:before {
+	margin-right: 10px;
+	position: absolute;
+	margin-bottom: 0;
+}
+#project-page section.project-donate div.manual label span {
+	display: inline;
+}
+
+#project-page section.page-section aside section.project-donate .radio div {
+	width: 28% !important;
+}
+#project-page section.page-section aside section#donate.project-donate .radio div.manual p {
+	width: 93%;
+	margin-left: 9px;
+}
+#project-page section.page-section aside section.project-donate article {
+	padding-top: 20px;
+}
+#project-page section.page-section aside section.project-donate .radio div.manual {
+	margin-top: 0;
+	width: auto !important;
+}
+
+#project-page section.page-section aside section.project-donate .project-donate-button-container .orange-button {
+	width: 93%;
+}
+/*END PROJECT DONATE*/
+/*BUTTONS / CTA'S*/
+.project-buttons{
+	margin-top: 7px;
+}
+.project-buttons .orange-button,
+.project-buttons .purple-button {
+	float: left;
+	width: 49%;
+}
+.project-buttons .purple-button {
+	float: right;
+}
+
+/*VIDEO STYLING*/
+.videoWrapper {
+	height: 355px;
+}
+.videoWrapper iframe {
+	width: 100%;
+	height: 100%;
+}
+.video-stream {
+	top: 0;
+	height: 100%;
+}
+
+form .error input{
+	border: 1px solid red;
+}
+section.project-donate .manual label span.error_message {
+	font-size: 14px;
+	color: red;
+	text-indent: 40px;
+}
+  /*****************/
+ /* TABLET STYLING*/
+/*****************/
+
+@media only screen and (min-width : 560px) and (max-width : 768px) {
+	/*misc*/
+	.hide_tablet {
+		display: none!important;
+	}
+	.show_tablet {
+		display: block!important;
+	}
+	.desktop {
+		display: none!important;
+	}
+	section.project-donate .manual p span {
+		margin-right: 6px;
+	}
+	/*end misc*/
+
+	/*FRAMEWEORK*/
+	.page-section {		
+		max-width: 97%;
+		min-width: 600px;
+	}
+	#projects {
+		max-width: 100%;
+	}
+	/*CTA'S*/
+	.orange-button, .purple-button, .blue-button, .green-button {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	section.project-donate label:before {
+		left: 25px;
+		top: 2px;
+	}
+
+	/*LEFT / RIGHT HAND PANEL*/
+	div.article-left {
+		width: 53%;
+	}
+
+	section.project-donate .manual p input
+	section.project-donate .manual i input {
+		width: 66%;
+	}
+
+	/*END FRAMEWORK*/
+
+	/*GENERIC*/
+	section#intro .article-text {
+		font-size: 14px;
+	}
+	section#collective #collective-header h4 {
+		font-size: 26px;
+	}
+	section#profiles article {
+		width: 49%;
+	}
+	section#profiles article p.name, section#profiles article p.news-update-title {
+		font-size: 22px;
+	}
+	section#collective #collective-inner #expanded-image-container article h4, 
+	section#profiles article h4,
+	section#share #share-inner h4 {
+		font-size: 24px;
+		line-height: 25px;
+	}
+	section#collective #collective-header h4 span.smaller {
+		font-size: 25px;
+	}
+	section#share #share-inner img.share-icon {
+		width: 25px;
+		height: 25px;
+	}
+	.og-expander h3 { font-size: 32px; }
+	.og-expander p { font-size: 13px; }
+	.og-expander a { font-size: 12px; }
+	.og-grid {width: 100%;}
+	.og-fullimg, .og-details {width: 45%;}
+	.og-close {
+		top: 2%;
+		right: 2%;
+		z-index: 111111;
+	}
+
+	section#map #map-container .live-pin span {
+		position: relative;
+		top: 0%;
+		right: -111%;
+		display: block;
+		font-family: WWFRegular;
+		font-size: 24px;
+		width: 112px;
+	}
+	#project-page section.page-section article#project-page-article .funded p span.smaller,
+	#project-page section.page-section article#project-page-article .funded p {
+		font-size: 23px;
+	}
+	/*PROJECT DETAILS*/
+	section.project-donate .radio div {
+		margin: 20px 1%;
+	}
+	.project-details div.article-left {
+		width: 50%;
+	}
+	div.article-left .funded p, section.project-donate label span {
+		font-size: 26px;
+	}
+	.og-grid li {
+		width: 61px;
+		max-height: 405px!important;
+	}
+	.og-details p {
+		font-size: 16px;
+		line-height: 17px;
+	}
+	/*END GENERIC*/
+
+	/*HOMEPAGE*/
+	#homepage section#collectives #collectives-inner p {
+		font-size: 14px;
+	}
+	#homepage section#collectives #collectives-inner .orange-button {
+		width: 80%;
+	}	
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		width: 36%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+		/*width: 60%;*/
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3.the-greatest-need-title {
+		padding: 8px 0 0 0;
+		font-size: 31px;
+	}
+	/*END HOMEPAGE*/
+
+	/*COLLECTIVE HUB*/
+	#collective-hub-page section#header-outer-container {
+		height: 175px;
+	}
+	#collective-hub-page section#header-outer-container header#collective-hub img {
+		margin: 30px auto;
+	}
+
+	/*LOCATION MAP*/
+	.map-overlay h3 {
+		margin: 5px 0!important;
+	}
+	.map-overlay p {
+		font-size: 14px;
+	}
+	.map-overlay .orange-button,
+	.map-overlay .purple-button {
+		font-size: 17px!important;
+		float: left;
+	}
+	.map-overlay .purple-button {
+		float: right;
+	}
+	.map-overlay-outer {
+		height: 69%!important;
+	}
+
+	#collective-hub-page div.article-left {
+		width: 47%;
+	}
+	#collective-hub-page .project-buttons .orange-button, 
+	#collective-hub-page .project-buttons .purple-button {
+		width: 44%;
+	}
+
+	/*PROJECT PAGE*/
+	#project-page section.project-donate header#donate-header h4,
+	#project-page section.project-donate header#donate-header h4 span.smaller {
+		font-size: 20px;
+	}
+	#project-page section.page-section aside section#share h4 {
+		font-size: 19px;
+	}
+	#project-page section.page-section aside section.project-donate .radio div {
+		width: 27% !important;
+	}
+	#project-page section.page-section aside section.thank-you div.container {
+		width: 48%;
+	}
+	/*dnate box*/
+	#project-page section.page-section article#project-page-article section.thank-you {
+		width: 41.5%;
+	}
+	#project-page section.page-section article#project-page-article section.thank-you div.container {
+		width: 48%;
+	}
+	#project-page section.project-donate .radio div {
+		width: 15% !important;
+	}
+	#project-page section.project-donate div.manual {
+		width: 42%!important;
+	}
+	#project-page section.page-section aside section.project-donate .project-donate-button-container .orange-button {
+		width: 94%;
+	}	
+	#project-page #header-outer-container div.right {
+		top: 30px;
+	}
+	#project-page section.page-section aside section.project-donate .radio div.manual {
+		margin-left: 6%;
+	}
+	#project-page section.page-section .og-grid li {
+		width: 38px;
+	}
+	#project-page section.page-section aside section#updates-and-news article img {
+		width: 100%;
+	}
+
+}
+/*END TABLET*/
+
+  /****************/
+ /**** MOBILE ****/
+/****************/
+@media only screen and (max-width : 560px) {	
+	/*FRAMEWORK*/
+	.page-section {		
+		max-width: 96%;
+		min-width: 96%;
+	}
+	/*MSIC*/
+	.show_desktop,
+	.desktop {
+		display: none!important;
+	}
+	.show_mobile {
+		display: block!important;
+	}
+	/*END MISC*/
+
+	/*GENERIC*/
+	div.article-left {
+		width: 58%;
+	}
+	div.article-left p {
+		font-size: 13px;
+		line-height: 17px;
+	}
+	.orange-button, 
+	.purple-button, 
+	.blue-button, 
+	.green-button {
+		font-size: 17px;
+	}
+	section#intro {
+		margin-top: 0px;
+	}
+	h3, 
+	div.article-left .funded p, 
+	section.project-donate label span {
+		font-size: 22px;
+	}
+	section#lead #lead-inner .orange-button {
+		width: 41%;
+	}
+	section#lead #lead-inner .purple-button {
+		width: 34%;
+	}
+	section#intro .article-text {
+		width: 100%;
+	}
+	section#intro .article-text, 
+	section#intro #video-container {
+		width: 96%;
+		padding: 10px;
+		font-size: 14px;
+	}
+	section#collective #collective-header h4,
+	section#collective #collective-header h4 span.smaller {
+		font-size: 22px;
+	}
+	section#profiles article {
+		width: 49%;
+	}
+	section#profiles article.latest_collective_news {
+		width: 100%;
+	}
+	section#profiles article p.name, 
+	section#profiles article p.news-update-title {
+		font-size: 19px;
+	}
+	section#profiles article aside {
+		width: 50%;
+	}
+	section#share .share_inner_02 h4 {
+		font-size: 18px!important;
+		line-height: 25px;
+	}
+	section#collective #collective-inner #expanded-image-container {
+		padding: 10px 5%;
+	}
+	section#collective #collective-inner #expanded-image-container article h4 {
+		margin: -2.5% 0 2.5%;
+	}
+	section#collective #collective-inner #expanded-image-container article h4, 
+	section#profiles article h4, 
+	section#share #share-inner h4 {
+		font-size: 26px;
+	}
+	section#collective #collective-inner #expanded-image-container article p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	section#share #share-inner img.share-icon {
+		width: 30px;
+		height: 30px;
+		margin-top: 8px;
+	}
+	section#map #map-top-text {
+		font-size: 24px;
+	}
+	section.project-donate .radio div {
+		width: 18%;
+	}
+	section.project-donate .manual p span {
+		margin-right: 5px;
+	}
+	#project-page section.project-donate .manual p span {
+		margin-right: 30px;
+	}
+	section.project-donate label span {
+		font-size: 26px;
+	}
+	section.project-donate .manual p input,
+	section.project-donate .manual i input {
+		width: 60%;
+	}
+	div.article-left .funded p span.smaller, section.project-donate .manual label span {
+		font-size: 20px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left article section.thank-you p.raised-so-far {
+		font-size: 22px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left article section.thank-you p span.smaller {
+		font-size: 22px;
+	}
+	.og-grid {width: 100%;}
+	.og-fullimg, .og-details {width: 48%;}
+	.og-close {
+		top: 0%;
+		right: 0%;
+		z-index: 111111;
+	}
+	.og-details h3 {
+		padding: 0 0 10px;
+		margin-bottom: 5px;
+		font-size: 28px;
+	}
+	.og-details p {
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.og-details {
+		padding: 0 0 0 10px;
+	}
+	.og-grid li {
+		width: 48px;
+	}
+	#project-page section.page-section aside section.project-donate .project-donate-button-container .orange-button {
+		width: 92%;
+	}
+	/*END GENERIC*/
+
+	/*HOMEPAGE*/
+	#homepage #header-outer-container h2 {
+		font-size: 50px;
+	}
+	#homepage #header-outer-container h3 {
+		font-size: 21px;
+	}
+	#homepage section#collectives #collectives-inner h3 {
+		font-size: 28px;
+	}
+	#homepage section#collectives #collectives-inner p {
+		font-size: 13px;
+	}
+	#homepage section#collectives #collectives-inner .orange-button {
+		width: 95%;
+		font-size: 22px;
+	}
+	/*THE WILDLIFE COLLECTIVE*/
+	#homepage section#projects .project .project-details .project-details-inner .article-left header {
+		padding: 10px 0;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+		width: 55%;
+	}	
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .orange-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .purple-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .blue-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .green-button {
+		margin-top: 14px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3.the-greatest-need-title {
+		padding: 0;
+		font-size: 25px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		width: 45%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 img {
+		width: 90%;
+	}
+
+	/*COLLECTIVE HUB*/
+	#collective-hub-page section#header-outer-container {
+		height: 50px;
+	}
+	#collective-hub-page section#header-outer-container header#collective-hub img {
+		margin: 0px auto;
+		width: 50%;
+	}
+	#collective-hub-page .orange-button, 
+	#collective-hub-page .purple-button, 
+	#collective-hub-page .blue-button, 
+	#collective-hub-page .green-button {
+		font-size: 19px;
+	}
+	#collective-hub-page div.article-left {
+		width: 46%;
+	}
+	#collective-hub-page  div.article-left .funded p, 
+	section.project-donate label span {
+		font-size: 18px;
+	}
+	#collective-hub-page .project-buttons .orange-button, 
+	#collective-hub-page .project-buttons .purple-button {
+		float: none;
+		width: 55%;		
+	}
+	#collective-hub-page .project-buttons .purple-button {
+		margin: 10px 0px;
+	}
+	.map-overlay h3 {
+		margin: 5px 0!important;
+	}
+	.map-overlay p {
+		margin: 5px 0!important;
+		font-size: 13px;
+	}
+	.map-overlay .orange-button,
+	.map-overlay .purple-button {
+		padding: 5px 24px 5px 15px!important;
+		font-size: 14px!important;
+		float: left;
+	}
+	.map-overlay .purple-button {
+		float: right;
+	}
+	.map-overlay-outer {
+		height: 75%!important;
+	}
+
+	/*PROJECT PAGE*/
+	#project-page section.page-section article#project-page-article {
+		float: none;
+		width: 100%;
+		padding-right: 0;
+		clear: both;
+	}
+	#project-page #header-outer-container header h1 {
+		font-size: 31px;
+	}
+	#project-page #header-outer-container header h3 {
+		font-size: 24px;
+	}
+	#project-page #header-outer-container div.right {
+		width: 32%;
+		height: 58px;
+	}
+	/*ASIDE*/
+	#project-page section.page-section aside {
+		float: none;
+		width: 100%;
+		clear: both;
+	}
+	#project-page section#share #share-inner img.share-icon {
+		width: auto;
+	}
+	#project-page section.page-section article#project-page-article .funded p,
+	#project-page section.page-section article#project-page-article .funded p span.smaller {
+		font-size: 23px;
+	}
+	#project-page section.page-section article#project-page-article section.thank-you div.container {
+		width: 48%;
+	}
+	#project-page section.project-donate .radio div {
+		width: 13% !important;
+	}
+	#project-page section.project-donate div.manual {
+		width: auto !important;
+	}
+	/*NEWS*/
+	#project-page section.page-section aside section#updates-and-news h3 {
+		margin: 0 0 30px;
+	}
+	#project-page section.page-section aside section#updates-and-news article {
+		overflow: hidden;
+		margin: 10px 0;
+	}
+	#project-page section.page-section aside section#updates-and-news article h2 {
+		float: left;
+		width: 50%;
+		margin: 0 0 5px 0;
+	}
+	#project-page section.page-section aside section#updates-and-news article img {
+		width: 45%;
+		float: right;
+		margin: 0;
+	}
+	#project-page section.page-section aside section#updates-and-news article p {
+		font-size: 14px;
+	}
+	/*END RIGHT HAND PANEL*/
+}
+  /*************************/
+ /* IPHONE MOBILE STYLING */
+ /************************/
+@media only screen and (max-width : 440px) { 
+	#project-page section.page-section {
+		padding: 0;
+		min-width: 93%;
+		max-width: 93%;
+	}
+	.show_desktop,
+	.hide_iphone,
+	.desktop {
+		display: none!important;
+	}
+	.show_mobile,
+	.show_iphone {
+		display: block!important;
+	}
+	section#projects .project .project-donate .tabs ul {
+		padding: 0;
+	}
+	section#projects .project .project-donate .tabs ul li {
+		padding: 12px 1% 15px;
+	}
+	/*HOMEPAGE*/
+	#homepage #header-outer-container h2 {
+		font-size: 50px;
+	}
+	#homepage #header-outer-container h3 {
+		font-size: 21px;
+	}
+	section#collectives article.first-gif {
+		margin-top: -8px;
+	}
+	#homepage section#collectives #collectives-inner h3 {
+		font-size: 28px;
+	}	
+	section#collectives article {
+		display: block;
+		width: 100%;
+		margin: 20px 0;
+	}
+	#homepage section#collectives #collectives-inner p {
+		font-size: 14px;
+		width: 90%;
+		margin: 5px auto 15px;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left {
+		margin: 10px 0 20px;
+	}
+	div.article-left {
+		width: 100%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 {
+		width: 93%;
+		margin: 0 3%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3 img {
+		width: 100%;
+		max-width: 100%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		width: 100%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		width: 35%;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header {
+		padding: 0;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons {
+		margin-top: 0;
+		padding-right: 0;
+		width: 100%;
+		margin: 0;
+	}
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .orange-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .purple-button, 
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .blue-button,
+	#homepage section#projects .project .project-details .project-details-inner .article-left header .project-buttons .green-button {
+		float: left;
+		display: block;
+		margin: 10px 2.5% 10px;
+		width: 90%;
+	}
+	#homepage section#projects .greatest_need .project-details .project-details-inner .article-left header .project-buttons .orange-button {
+		margin: 15px auto 20px; 
+		float: center;
+	}
+	#homepage section#projects .project .project-details {
+		background: none!important;
+	}
+
+	#homepage section#projects .project .project-details .project-details-inner .article-left header h3.the-greatest-need-title {
+		padding: 13px 10px 0;
+		font-size: 44px;
+	}
+	#homepage section#collectives #collectives-inner {
+		text-align: center;
+		border-bottom: 5px solid #fff;
+	}
+	#homepage section#projects .project .project-donate .tabs ul li {
+		margin-left: 0;
+		margin-bottom: -3px;
+	}
+	#homepage section#projects .project .project-donate .tabs ul li.ui-state-active, 
+	#homepage section#projects .project .project-donate .tabs ul li:hover {
+		background: #dfdfd0;
+		border: 3px solid #dfdfd0;
+	}	
+
+	/*THE COLLECTIVE HUB*/
+	section#intro .article-text, section#intro #video-container {
+		width: 94%;
+	}
+	section#lead #lead-inner .orange-button,
+	section#lead #lead-inner .purple-button {
+		width: 90%!important;
+	}
+	
+	section#collective #collective-header h4, section#collective #collective-header h4 span.smaller {
+		font-size: 20px;
+		float: none;
+		margin: 0 0 10px;
+	}
+	section#profiles article {
+		width: 100%;
+	}
+	section#share .share_inner_02 h4 {
+
+		line-height: 25px !important;
+	}
+	section#share #share-inner img.share-icon {
+		float: left;
+		margin-left: 5px;
+		width: 33px;
+		height: 33px;
+	}
+	
+	#collective-hub-page div.article-left {
+		width: 93%;
+	}
+	#collective-hub-page div.article-left header {
+		position: relative;
+	}
+	section.project-donate article p {
+		text-align: center;
+	}
+	h3, div.article-left .funded p, section.project-donate label span {
+		font-size: 19px;
+		margin: 0 0 20px 0;
+	}
+	div.article-image {
+		display: inline-block;
+		position: absolute;
+		right: 0;
+		width: 50%;
+		height: 100%;
+		background-size: cover;
+		background-position: center center;
+		top: 39px;
+	}
+	div.article-image div.flash {
+		position: absolute;
+		right: 0;
+		width: 0px;
+		height: 0px;
+		border-bottom: 150px solid transparent;
+		border-right: 150px solid rgba(216,39,84,0.6);
+	}
+	div.article-image div.flash.flash-funded {
+		border-right: 150px solid rgba(142,196,73,0.6);
+	}
+	div.article-image div.flash p {
+	    position: relative;
+	    top: 12px;
+	    right: -60px;
+	    width: 93px;
+	    height: 93px;
+	    margin: 0px;
+	}
+	div.article-image div.flash.flash-funded p {
+		top: 30px;
+	}
+	div.article-image div.flash p {
+		font-family: WWFRegular;
+		font-size: 26px;
+		text-align: center;
+		text-transform: uppercase;
+		color: #fff;
+		line-height: 26px;
+	}
+	#collective-hub-page .project-buttons .orange-button, 
+	#collective-hub-page .project-buttons .purple-button {
+		float: none;
+		width: 95%;
+	}
+
+	.map-overlay-outer {
+		padding: 0!important;
+		top: 0%!important;
+		height: 100%!important;
+	}
+	section#collective #collective-inner #expanded-image-container article {
+		width: 100%;
+	}
+	section.project-donate .radio div {
+		width: 100%;
+	}
+	section.project-donate .radio div.manual {
+		width: 100%;
+		text-align: center;
+	}
+	section.project-donate header p {
+		width: 30%;
+		font-size: 14px;
+	}
+	section.project-donate header h3 {
+		float: left;
+		width: 64%;
+	}
+	aside.article-image {
+		background-image: none!important;
+		width: 0!important;
+	}
+	.map-overlay p {
+		font-size: 11px;
+	}
+	#collective-hub-page div.article-left .funded p span, section.project-donate label span {
+		font-size: 18px;
+	}
+
+	/*PROJECT PAGE*/
+	#project-page #header-outer-container div.left {
+		padding-bottom: 35px;
+	}
+	#project-page section#share #share-inner img.share-icon {
+		width: 26px;
+		height: 26px;
+		float: right;
+	}
+	section.project-donate header h3 {
+		width: 63%;
+	}
+	#project-page section.page-section article#project-page-article section.funded {
+		width: 100%;
+	}
+	#project-page section.page-section article#project-page-article section.thank-you {
+		width: 90%;
+	}
+	#project-page section.project-donate .radio div {
+		width: 28% !important;
+	}
+	#project-page section.project-donate div.manual {
+		width: auto !important;
+	}
+	section.project-donate label span {
+		font-size: 26px;
+	}
+	div.article-left .funded p span.smaller, section.project-donate .manual label span {
+		font-size: 20px;
+	}		
+	.og-grid {
+		padding: 0px 0;
+	}
+	.og-fullimg, .og-details {
+		width: 94%;
+		float: none;
+	}
+	.og-grid li {
+		max-height: 575px!important;
+	}
+	.og-expander {
+		max-height: 460px!important;
+	}
+	#project-page section.page-section .og-grid li {
+		max-height: 460px!important;
+		width: 55px;
+	}
+	#project-page section.page-section .og-expander {
+		max-height: 475px!important;
+	}
+	/*NEWS*/
+	#project-page section.page-section aside section#updates-and-news article h2 {
+		float: none;
+		width: 100%;
+	}
+	#project-page section.page-section aside section#updates-and-news article img {
+		width: 100%;
+		float: none;
+	}
+	#project-page section.page-section aside section#updates-and-news article p {
+		font-size: 14px;
+	}
+	section#lead #lead-inner p {
+		margin: 20px 0 0;
+	}
+	section#collective #collective-header {
+		padding: 10px 10px 0;
+		overflow: hidden;
+	}
+	#homepage section#collectives #collectives-inner .orange-button {
+		width: 100%;
+		font-size: 20px;
+		left: 0;
+	}
+	section.project-donate .manual p input,
+	section.project-donate .manual i input {
+		width: 48%;
+	}
+	#homepage section#collectives #collectives-inner a {
+		margin: 0;
+	}
+	#homepage section#collectives #collectives-inner .orange-button {
+		width: 90%;
+		font-size: 19px;
+		left: -1%;
+	}
+	section.project-donate .manual label span.error_message {
+		font-size: 14px;
+		color: red;
+		text-indent: 0px;
+		clear: both;
+	}
+
+}
+#collective-hub-page section.project-donate .manual i input {
+	width: 45%;
+}

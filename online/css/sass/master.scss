@@ -1,0 +1,17 @@
+// WWF
+// Main stylesheet
+// main.scss
+
+// mixins file
+@import "mixins/mixins";
+@import "mixins/_colour_palette";
+// GENERIC STYLESHEETS
+@import "partials/_normalize";
+@import "partials/_framework";
+
+// FONTS
+// @import "partials/_fonts";
+
+// CUSTOM STYLESHEETS
+@import "partials/_page_header";
+@import "partials/_homepage";

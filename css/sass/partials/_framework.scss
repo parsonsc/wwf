@@ -1,0 +1,68 @@
+/** MISC START **/
+.clear {
+	display: block;
+	clear: both;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+.show_desktop {
+	display: block!important;
+}
+.show_mobile,
+.show_iphone {
+	display: none!important;
+}
+.show_tablet {
+	display: none!important;
+}
+/** MISC END **/
+
+/** MAIN LAYOUT START **/
+body {
+	text-align: center;
+}
+
+.page-section {
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 960px;
+	overflow: hidden;
+	text-align: left;
+}
+/** MAIN LAYOUT END **/
+
+/** FONT FACE START **/
+@font-face {
+    font-family: 'WWFRegular';
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot');
+    src: url('http://www.wwf.org.uk/_css/font/wwf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.woff') format('woff'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.ttf') format('truetype'),
+         url('http://www.wwf.org.uk/_css/font/wwf-webfont.svg#WWFRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* using modernizr to detect lack of @font-face support and adjust the size of arial to fit */
+.no-fontface #tpmmdi h1 {font-size:300%;}
+.no-fontface #tpmmdi div.tpmmdi-do div.article div.body h2 {font-size:108%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.twitter h3 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi a.button {font-size:80%;line-height:160%;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.facebook h3 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-do div.article div.body form h3 {font-size:150%;font-weight:bold}
+.no-fontface #tpmmdi div.tpmmdi-carousel div.about h2 {font-size:150%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-carousel div.about a.button {font-size:150%;line-height:160%;}
+.no-fontface #tpmmdi a.do-it{font-size:130%;line-height:110%;}
+.no-fontface #tpmmdi div.tpmmdi-wwyd h2{font-size:200%; font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-social div.box h3 {font-size:150%; font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa h2 {font-size:200%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa ul li span.title {font-size:200%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-content div.tpmmdi-iasa ul li span.detail {font-size:100%;font-weight:bold;}
+.no-fontface #tpmmdi div.tpmmdi-sidebar div.social-links h3 {font-size:150%;font-weight:bold;}
+.no-fontface .mainstage a.main_story .headline h1 {font-size:18pt;}
+.no-fontface #social_footer h3 {font-size:.97em;font-weight:bold;}
+/** FONT FACE END **/
